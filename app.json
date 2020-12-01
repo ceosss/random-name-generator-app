@@ -1,0 +1,12 @@
+{
+  "name": "random-name-generator",
+  "displayName": "random-name-generator",
+  "expo": {
+    "name": "random-name-generator",
+    "slug": "random-name-generator",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
