@@ -1,8 +1,17 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import "@react-native-firebase/app";
+import firestore from "@react-native-firebase/firestore";
 
 export default function App() {
+  useEffect(() => {
+    firestore()
+      .collection("demo")
+      .doc("Vc21OgYkwhReOaTXhRlt")
+      .get()
+      .then((doc) => console.log(doc.data()));
+  }, []);
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Random Name Generator!</Text>
